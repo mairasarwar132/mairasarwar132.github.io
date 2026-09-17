@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Maira Sarwar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cv-body">
+  <div class="cv-toolbar">
+    <a class="btn btn-ghost" href="index.html">Back to portfolio</a>
+    <div class="cv-actions">
+      <button class="btn btn-primary" type="button" id="print-cv">Print CV</button>
+      <button class="btn btn-outline" type="button" id="download-cv">Download CV</button>
+    </div>
+  </div>
+
+  <article class="cv-sheet">
+    <header class="cv-header">
+      <img class="cv-photo" src="maira-sarwar.png" alt="Portrait of Maira Sarwar">
+      <div>
+        <h1>Maira Sarwar</h1>
+        <p class="cv-role">Flutter Developer &amp; No-Code AI Automation Specialist</p>
+        <p class="cv-contact">
+          <a href="mailto:mairasarwar132@gmail.com">mairasarwar132@gmail.com</a>
+          ·
+          <a href="https://github.com/mairasarwar132" target="_blank" rel="noopener noreferrer">GitHub</a>
+          ·
+          <a href="https://linkedin.com/in/maira-sarwar-771231416" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p>BSIT student at Superior University, Gold Campus Lahore (expected graduation: December 2027). Focused on Flutter mobile development, AI automation, no-code AI, prompt engineering and workflow design with n8n, Firebase and MCP.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Science in Information Technology (BSIT)</strong><br>Superior University, Gold Campus Lahore. Expected December 2027</p>
+    </section>
+
+    <section>
+      <h2>Internship</h2>
+      <p><strong>App Development Intern - CodeAlpha</strong><br>20 June 2026 - 20 July 2026</p>
+      <p>Flutter app development internship. Projects: FitTrack Pro, QuoteFlow, Flashcard Quiz App.</p>
+    </section>
+
+    <section>
+      <h2>Technical skills</h2>
+      <p><strong>Mobile:</strong> Flutter, Dart, Firebase, SQLite, Provider, Riverpod, REST APIs, local database, mobile UI</p>
+      <p><strong>Web:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Development:</strong> Node.js, Python, C, C++, Django, SQL, APIs, OOP</p>
+      <p><strong>AI &amp; automation:</strong> LLMs, prompt engineering, AI agents, n8n, MCP, no-code AI, chatbots, Google Workspace automation</p>
+      <p><strong>Tools:</strong> Git, GitHub, Firebase, Ollama, Docker, VS Code, Android Studio</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Right Eat</strong> — Flutter food ordering app for the Pakistani market (Firebase, SQLite, APIs).</li>
+        <li><strong>FitTrack Pro</strong> - Completed Flutter fitness tracker (Riverpod, Drift, light/dark mode). GitHub: github.com/mairasarwar132/CodeAlpha_FitnessTracker</li>
+        <li><strong>QuoteFlow</strong> - Completed Flutter quote app. GitHub: github.com/mairasarwar132/CodeAlpha_RandomQuoteGenerator</li>
+        <li><strong>Flashcard Quiz App</strong> - Completed Flutter flashcard and quiz app. GitHub: github.com/mairasarwar132/CodeAlpha_FlashcardQuizApp</li>
+        <li><strong>Smart Price Negotiation Agent</strong> - Academic AI mini project using Minimax and game theory.</li>
+        <li><strong>Heart Failure Prediction</strong> - Academic machine learning classification project.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Courses</h2>
+      <ul>
+        <li>No-Code AI Tools Mastery - Ideoversity Training to Excellence, Arfa Tower Lahore</li>
+        <li>JDC — 3-Month Graphic Design Course</li>
+        <li>Arman Institute — Basic IT Course</li>
+        <li>AWS — Cloud Computing Course</li>
+      </ul>
+    </section>
+  </article>
+  <script>
+    document.getElementById("print-cv").addEventListener("click", () => {
+      window.print();
+    });
+
+    document.getElementById("download-cv").addEventListener("click", () => {
+      const html = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const blob = new Blob([html], { type: "text/html" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "Maira-Sarwar-CV.html";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
