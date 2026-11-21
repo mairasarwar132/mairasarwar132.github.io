@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mairasarwar132.github.io/sitemap.xml

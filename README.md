@@ -1,15 +1,20 @@
-# Maira Sarwar Portfolio
+# Maira Sarwar — Professional Portfolio
 
-A responsive static portfolio for Maira Sarwar, Flutter and Mobile Application Developer.
+Premium static portfolio for Maira Sarwar, a Flutter and Mobile Application Developer with growing expertise in AI and workflow automation.
 
-## Files
+**Live:** https://mairasarwar132.github.io/
 
-- `index.html` — portfolio page
-- `style.css` — responsive design and visual system
-- `script.js` — navigation, filtering and reveal interactions
-- `cv.html` — resume viewer
-- `Maira-Sarwar-Resume.pdf` — downloadable resume
-- `maira-sarwar.jpg` — portrait asset
+## Included
+
+- Responsive mobile, tablet, laptop and desktop layouts
+- Verified education, experience, certifications and project information
+- Real portrait and downloadable CV
+- Project category filtering
+- Contextual WhatsApp CTAs and floating contact button
+- Mailto contact form fallback
+- Active-section navigation and accessible mobile menu
+- Reduced-motion support and semantic page structure
+- Open Graph metadata, JSON-LD profile data and sitemap
 
 ## Local preview
 
@@ -21,10 +26,4 @@ Open `http://127.0.0.1:4173`.
 
 ## GitHub Pages
 
-This repository is published as a user site from the `main` branch. Keep `index.html` at the repository root.
-
-## Contact
-
-- Email: mairasarwar132@gmail.com
-- GitHub: https://github.com/mairasarwar132
-- LinkedIn: https://linkedin.com/in/maira-sarwar-771231416
+The repository is a user site and publishes from the `main` branch. Keep `index.html`, `style.css`, `script.js`, the portrait and resume at the repository root.
